@@ -10,14 +10,16 @@ const Help = () => {
     }
 
     return (
-        <>
-            <h2>Help</h2>
-            <p>
-                If you are having trouble with this website we are ready to help.
-                Please contact us using the details below:
-            </p>
-            <ContactDetails contactDetails={contactDetails} />
-        </>
+        <div className="page--header">
+            <div className="content--container">
+                <h2>Help</h2>
+                <p>
+                    If you are having trouble with this website we are ready to help.
+                    Please contact us using the details below:
+                </p>
+                <ContactDetails contactDetails={contactDetails} />
+            </div>
+        </div>
     )
 };
 

@@ -5,19 +5,16 @@ import React from 'react';
 import About from './about/about';
 import Weather from './weather/weather';
 import Help from './help/help';
+import Header from '../components/header';
 
 
-const WeatherApp = () => {
-
-    // By replacing the div with the context any child and their children will have access to the context
-    return (
-        <>
-            <h1>Notes - Update</h1>
-            <About />
-            <Weather />
-            <Help />
-        </>
-    )
-};
+const WeatherApp = () => (
+    <>
+        <Header />
+        <About />
+        <Weather />
+        <Help />
+    </>
+);
 
 export { WeatherApp as default }
