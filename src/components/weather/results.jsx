@@ -44,9 +44,9 @@ const WeatherResults = ({results = []}) => (
             </TableHead>
             <TableBody>
             {results.length > 0 
-                ? results.map( row => (
+                ? results.map( (row, index) => (
                     <StyledTableRow
-                        key={row.searchedTerm}
+                        key={`searchedTerm${index}`}
                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
                         <StyledTableCell component="th" scope="row">{row.submitSearchTerm}</StyledTableCell>

@@ -2,7 +2,7 @@ const request = require('postman-request');
 
 // Request to weatherstack to fetch a forecast by langitude and longitude
 const forecast = ({ latitude, longitude, placeName, location }) => {
-    const accessKey = '596c94584e31d9c1c0ccefb51f75bd04';
+    const accessKey = process.env.WEATHERSTACK_ACCESS_KEY;
     const url = `http://api.weatherstack.com/current?access_key=${accessKey}&query=${latitude},${longitude}`;
     
     return new Promise((resolve, reject) => {

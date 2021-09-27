@@ -90,6 +90,8 @@ function getClientEnvironment(publicUrl) {
         // which is why it's disabled by default.
         // It is defined here so it is available in the webpackHotDevClient.
         FAST_REFRESH: process.env.FAST_REFRESH !== 'false',
+        GEOCODE_ACCESS_KEY: process.env.GEOCODE_ACCESS_KEY,
+        WEATHERSTACK_ACCESS_KEY: process.env.WEATHERSTACK_ACCESS_KEY
       }
     );
   // Stringify all values so we can feed into webpack DefinePlugin
